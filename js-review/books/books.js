@@ -1,4 +1,4 @@
-const data = [
+const books = [
     {
         id: 1,
         title: 'The Lord of the Rings',
@@ -135,4 +135,4 @@ const data = [
     },
 ];
 
-module.exports = { data };
+module.exports = { books };
