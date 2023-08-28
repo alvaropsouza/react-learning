@@ -169,4 +169,14 @@ const getTotalReviewCount = (book) => {
     return goodreads + libraryThing;
 };
 
-console.log(getTotalReviewCount(book));
+const allBooks = getBooks();
+
+const titles = allBooks.map((book) => book.title);
+
+const essentialData = allBooks.map((book) => ({
+    title: book.title,
+    author: book.author,
+    reviewsCount: getTotalReviewCount(book),
+}));
+
+essentialData;
